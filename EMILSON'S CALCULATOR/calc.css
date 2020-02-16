@@ -1,0 +1,248 @@
+#body{
+    background:linear-gradient(to right,#e91e63,#3f51b5);
+
+}
+.emil2{
+    text-align: center;
+    font-size: larger;
+    color:#f1f1f1;
+    padding-top:20px;
+}
+#section1{
+    background-color: rgb(29, 27, 27);
+    max-width: 270px;
+    height:470px;
+    margin:auto;
+    margin-top: 70px; 
+    border-radius: 30px;
+}
+#forminput{
+    height:70px;
+    width:270px;
+    background-color: rgb(180,209,180);
+    box-shadow: 0px, 0px, 10px,(201,197,197);
+}
+#shifter{
+    width:60px;
+    text-align: center;
+    border-radius: 30px;
+    color:#f1f1f1;
+    background-color: gray;
+    font-size: 10px;
+    margin-left: 6px;
+    margin-top: 9px;
+    height:20px;
+}
+#mode{
+    width:48px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(243, 93, 93);
+    font-size: 11px;
+    margin-left: 96px;
+    color:white;
+    margin-top: 9px;
+}
+#on{
+    width:40px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:rgb(243, 93, 93);
+    font-size: 12px;
+    margin-left: 2px;
+    color:white;
+    margin-top: 9px;
+}
+#raise1{
+    margin-left:5px;
+    margin-top: 7px;
+}
+#raise2{
+    margin-left: 7px;
+    margin-top: 7px;
+}
+#raise3{
+    margin-left:7px;
+    margin-top: 7px;
+    width:40px;
+}
+#raise4{
+    margin-left: 7px;
+    margin-top: 7px;
+}
+#raise5{
+    margin-left: 10px;
+    margin-top: 7px;
+    width:40px;
+    background: crimson;
+}
+#raisee1{
+    margin-left: 7px;
+    width:40px;
+    margin-top: -20px;
+}
+#raisee2{
+    margin-left: 8px;
+    width:40px;
+    margin-top: -20px;
+}
+#raisee3{
+    margin-left: 8px;
+    width:40px;
+    margin-top: -20px;
+}
+#rais1{
+    margin-top: 40px;
+    margin-left: -150px;
+    width: 40px;
+}
+#rais2{
+    margin-left: -103px;
+    margin-top: 40px;
+    width:40px;
+}
+#rais3{
+    margin-left: -55px;
+    margin-top: 40px;
+    width:40px;  
+}
+#seven{
+    width:40px;
+    margin-left: 6px;
+    margin-top: 8px;
+    color:white;
+    background-color: #000;
+}
+#eight{
+    width:40px;
+    margin-left: 6px;
+    margin-top: 8px;
+    color:white;
+    background-color: #000;
+}
+#nine{
+    width:40px;
+    margin-left: 7px;
+    margin-top: 8px;
+    color:white;
+    background-color: #000;
+}
+#ac{
+    margin-left: 67px;
+    margin-top: 8px;
+    width: 40px;
+    background-color: crimson;
+    color:white;
+}
+#delete{
+    margin-left: -90px;
+    margin-top: 8px;
+    width:38px;
+    background-color: crimson;
+    color:white;
+}
+#four{
+    width:40px;
+    margin-left: 6px;
+    margin-top: 8px;
+    color:white;
+    background-color: #000;
+}
+#five{
+    width:40px;
+    margin-left: 6px;
+    margin-top: 8px;
+    color:white;
+    background-color: #000;  
+}
+#six{
+    width:40px;
+    margin-left: 7px;
+    margin-top: 8px;
+    color:white;
+    background-color: #000;
+}
+#division{
+    margin-left: 7px;
+    margin-top: 8px;
+    width: 40px;
+    background-color: #000;
+    color:white;
+}
+#ex{
+    margin-left: 20px;
+    margin-top: 8px;
+    width:38px;
+    background-color: #000;
+    color:white; 
+}
+#one{
+    width:40px;
+    margin-left: 6px;
+    margin-top: 8px;
+    color:white;
+    background-color: #000; 
+}
+#two{
+    width:40px;
+    margin-left: 6px;
+    margin-top: 8px;
+    color:white;
+    background-color: #000;  
+}
+#three{
+    width:40px;
+    margin-left: 7px;
+    margin-top: 8px;
+    color:white;
+    background-color: #000;     
+}
+#plus{
+    margin-left: 20px;
+    margin-top: 8px;
+    width:38px;
+    background-color: #000;
+    color:white;  
+}
+#minus{
+    margin-left: 7px;
+    margin-top: 8px;
+    width: 40px;
+    background-color: #000;
+    color:white;
+}
+#zero{
+    width:40px;
+    margin-left: 6px;
+    margin-top: 8px;
+    color:white;
+    background-color: #000;
+}
+#point{
+    width:40px;
+    margin-left: 6px;
+    margin-top: 8px;
+    color:white;
+    background-color: #000;
+}
+#expire{
+    margin-left: 9px;
+    margin-top: 8px;
+    width:38px;
+    background-color: #000;
+    color:white;
+}
+#answer{
+    margin-left: 18px;
+    margin-top: 8px;
+    width:38px;
+    background-color: #000;
+    color:white;
+}
+#equals{
+    margin-left: 9px;
+    margin-top: 8px;
+    width: 40px;
+    background-color: #000;
+    color:white;
+}

@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="view port">
+<meta http-equi="X-UA-compatible"content="ie=edge">
+<title>CALCULATOR</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body id="body">
+<section id="section1">
+<div class="container">
+<h2 style="color:aliceblue;">EMILSON'S CALCULATOR</h2>
+</div>
+<input class="text-view" id="forminput">
+<table id="table1">
+<tr>
+<td><input class="button" type="button"  onclick="Clean()"value="C"></td>
+<td><input class="button" type="button" onclick="shownum('.')" value="."></td>
+<td><input class="button" type="button" onclick="shownum('/')" value="/"></td>
+<td><input class="button" type="button"onclick="shownum('x')" value="x"></td>
+</tr>
+</table>
+<table id="table2">
+<tr>
+<td><input class="button" type="button" onclick="shownum(7)"value="7"></td>
+<td><input class="button" type="button" onclick="shownum(8)" value="8"></td>
+<td><input class="button" type="button" onclick="shownum(9)"value="9"></td>
+<td><input class="button" type="button" onclick="shownum('-')" value="-"></td>
+</tr>
+</table>
+<table id="table3">
+<tr>
+<td><input class="button" type="button" onclick="shownum(4)" value="4" ></td>
+<td><input class="button" type="button" onclick="shownum(5)" value="5"></td>
+<td><input class="button" type="button"  onclick="shownum(6)"value="6"></td>
+<td><input class="button" type="button"  onclick="shownum('+')"value="+"></td>
+</tr>
+</table>
+<table id="table4">
+<tr>
+<td><input class="button" type="button"onclick="shownum(1)" value="1"></td>
+<td><input class="button" type="button" onclick="shownum(2)"value="2"></td>
+<td><input class="button" type="button" onclick="shownum(3)"value="3"></td>
+<td><input class="button" type="button" onclick="equal()"value="=" id="equal"></td>
+
+</tr>
+</table>
+<td colspan="2"><input class="button"type="button"onclick="shownum(0)"value="0" id="zero"></td>
+<td colspan="2"><input class="button" type="button"  onclick="delback()" value="D" id="full"></td>
+
+</section>
+</body>
+<script>
+     function shownum(val){
+            document.getElementById("forminput").value+=val;
+     }
+     function equal(){
+            document.getElementById("forminput").value=eval(document.getElementById("equal").value);
+        }
+        function Clean(){
+            document.getElementById("forminput").value="";
+        }
+        function delback() {
+            var valueNeeded = document.getElementById("forminput").value;
+            document.getElementById("forminput").value=valueNeeded.substring(0,valueNeeded.length-1);
+        }
+
+</script>
+</html>
