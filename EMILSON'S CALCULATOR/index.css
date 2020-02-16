@@ -1,0 +1,34 @@
+#body{
+    background:linear-gradient(to right,#e91e63,#3f51b5);
+}
+#section1{
+margin:0px;
+padding: 0px;
+position: absolute;
+top: 50%;
+left:50%;
+transform: translateX(-50%)translateY(-50%);
+background-color: black;
+width:19%;
+height:78%;
+}
+.button{
+width:50px;
+height:50px;
+font-size: 25px;
+margin:2px;
+cursor: pointer;
+color:black;
+}
+#forminput{
+    height:50px;
+    width:233px;
+    background-color: rgb(180,209,180);
+    box-shadow: 0px, 0px, 10px,(201,197,197);
+}
+#zero{
+width:106px;
+}
+#full{
+width:109px;
+}

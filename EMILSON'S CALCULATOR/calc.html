@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="view port">
+        <meta http-equi="X-UA-compatible"content="ie=edge">
+        <title>CALCULATOR</title>
+        <link rel="stylesheet" href="calc.css">
+    </head>
+    <body id="body">
+        <section id="section1">
+            <div class="container">
+                <h2 class="emil2">WAEC SCIENTIFIC CALCULATOR</h2>
+                
+            </div>
+            <input class="text-view" id="forminput" readonly>
+            <table id="table1">
+                <tr>
+                 <td><input type="button" value="SHIFT" id="shifter"></td>
+                 <td><input type="button" onclick="MODE(10)" value="MODE" id="mode"></td>
+                 <td><input type="button" onclick="ON(0)" value="ON" id="on"  disabled></td>
+                    
+                </tr>
+            </table>
+
+            <table id="table2">
+                <tr>
+                 <td><input type="button" value="ꓫ˄1" id="raise1"></td>
+                 <td><input type="button" value="ꓫ˄2" id="raise2"></td>
+                 <td><input type="button" value="RCL" id="raise3"></td>
+                 <td><input type="button" value="ENG" id="raise4"></td>
+                 <td><input type="button" onclick="Clearme()" value="C" id="raise5"></td>
+
+                 <table id="table3">
+                 <td><input type="button" value="hyp" id="raisee1"></td>
+                 <td><input type="button" value="sin" id="raisee2"></td>
+                 <td><input type="button" value="cos" id="raisee3"></td>
+                 <td><input type="button" value="tan" id="rais1"></td>
+                 <td><input type="button" value="log" id="rais2"></td>
+                 <td><input type="button" value=".,,," id="rais3"></td></table>
+                 
+                </tr>
+            </table>
+            <table id="table4">
+                <tr>
+                 <td><input type="button"   onclick="shownum(7)"value="7" id="seven"></td>
+                 <td><input type="button"  onclick="shownum(8)" value="8" id="eight"></td>
+                 <td><input type="button"  onclick="shownum(9)" value="9" id="nine"></td>
+                 <td><input type="button" onclick="OFF()" value="OFF" id="ac"></td>
+                 <td><input type="button" onclick="delback()" value="DEL" id="delete"></td>
+                </tr>
+            </table>
+            <table id="table5">
+                <tr>
+                  <td><input type="button"  onclick="shownum(4)" value="4" id="four"></td>
+                  <td><input type="button"  onclick="shownum(5)" value="5" id="five"></td>
+                  <td><input type="button"  onclick="shownum(6)" value="6" id="six"></td>
+                  <td><input type="button"  onclick="shownum('×')" value="×" id="ex"></td>
+                  <td><input type="button"   onclick="shownum('/')"value="÷" id="division"></td>
+                </tr>
+            </table>
+            <table id="table6">
+                <tr>
+                  <td><input type="button"  onclick="shownum(1)" value="1" id="one"></td>
+                  <td><input type="button"   onclick="shownum(2)"value="2" id="two"></td>
+                  <td><input type="button"  onclick="shownum(3)" value="3" id="three"></td>
+                  <td><input type="button"  onclick="shownum('+')" value="+" id="plus"></td>
+                  <td><input type="button"  onclick="shownum('-')" value="-" id="minus"></td>
+                </tr>
+            </table>
+            <table id="table7">
+                <tr>
+                  <td><input type="button" onclick="shownum(0)" value="0" id="zero"></td>
+                  <td><input type="button" onclick="shownum('.')" value="." id="point"></td>
+                  <td><input type="button" value="EXP" id="expire"></td>
+                  <td><input type="button" onclick="equal()" value="Ans" id="answer"></td>
+                  <td><input type="button" onclick="equal()" value="=" id="equals"></td>
+                </tr>
+            </table>
+        </section>
+    </body>
+    <script>
+        function ON(val) {
+                    document.getElementById("forminput").value=val;
+        }
+        function OFF(val){
+            document.getElementById("forminput").value=" ";
+        }
+        function MODE(val) {
+                    document.getElementById("forminput").value=val;
+        }
+        function shownum(val){
+            document.getElementById("forminput").value+=val;
+        }
+        function equal(){
+            document.getElementById("forminput").value=eval(document.getElementById("forminput").value);
+        }
+        function Clearme(){
+            document.getElementById("forminput").value="";
+        }
+        function delback() {
+            var valueNeeded = document.getElementById("forminput").value;
+            document.getElementById("forminput").value=valueNeeded.substring(0,valueNeeded.length-1);
+        }
+        function solve(){
+            try{
+                forminput(eval(document.getElementById("forminput").value));
+            }
+            catch(e){
+                forminput("Error")
+            }
+        }
+    </script>
+</html>
